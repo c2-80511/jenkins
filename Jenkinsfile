@@ -10,7 +10,7 @@ pipeline {
         
         stage ('docker login') {
             steps {
-                sh 'echo dckr_pat_CHPu1ilNJ-p1MFZJucnCfF_nOEA | /usr/bin/docker login -u prasadthombare --password-stdin'
+                sh 'echo <token> | /usr/bin/docker login -u prasadthombare --password-stdin'
             }
         }
         stage ('docker build image') {
